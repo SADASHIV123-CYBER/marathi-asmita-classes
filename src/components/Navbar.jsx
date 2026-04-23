@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Menu, X, PhoneCall } from 'lucide-react';
 
+import logo from '../assets/logo.png'
+
 const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'Results', href: '#results' },
@@ -18,7 +20,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-brandMaroon text-white shadow-soft">
-            <img src="/assets/logo.jpg" alt="Marathi Asmita Coaching Classes" className="h-full w-full object-cover" loading="lazy" />
+            <img src={logo} alt="Marathi Asmita Coaching Classes" className="h-full w-full object-cover" loading="lazy" />
           </div>
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-brandMaroon">Marathi Asmita</p>
